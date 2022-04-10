@@ -1,8 +1,14 @@
 import express from 'express'
+import TemplateFactory from './src/FactoryTemplate/TemplateFactory';
 const app = express();
 // Get example
 const router: express.Router = express.Router()
 router.get('/api/getTest', (req, res) => {
+
+  //TemplateFactory.getTemplate("employee").Save({});
+  //TemplateFactory.getTemplate("employee").get();
+
+
   res.send("hello world")
 })
 
